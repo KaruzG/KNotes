@@ -1,0 +1,19 @@
+button#addNoteButton {
+    background-color: #FCD462;
+    margin: 50px;
+    border-radius: 50%;
+    padding: 35px;
+    height: 50px;
+    width: 50px;
+    border: 0;
+}
+
+i#addNote {
+    color: #FCD462;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+i#addNote:hover {
+    color: #dfb74a;
+}
