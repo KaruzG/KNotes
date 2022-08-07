@@ -1,3 +1,9 @@
+/* 
+    ---MAIN YELLOWS---
+    #dfb74a
+    #FCD462
+*/
+
 button#addNoteButton {
     background-color: #FCD462;
     margin: 50px;
@@ -16,4 +22,32 @@ i#addNote {
 
 i#addNote:hover {
     color: #dfb74a;
+    cursor: pointer;
+}
+
+div.draggableNote {
+    background-color: #FCD462;
+    min-width: 250px;
+    min-height: 250px;
+    position: absolute;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
+    border-bottom: 5px solid #dfb74a;
+}
+
+div.draggableNote input {
+    width: 80%;
+    border: none;
+    background-color: #FCD462;
+    font-weight: bold;
+    display: inline;
+}
+
+div.draggableNote button {
+    width: 20%;
+    height: 100%;
+    display: inline;
+    border: none;
+    background-color: #e9b657;
+    font-weight: bold;
 }
