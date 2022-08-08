@@ -29,25 +29,36 @@ div.draggableNote {
     background-color: #FCD462;
     min-width: 250px;
     min-height: 250px;
+    max-width: 250px;
     position: absolute;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
     border-bottom: 5px solid #dfb74a;
 }
 
-div.draggableNote input {
-    width: 80%;
-    border: none;
-    background-color: #FCD462;
-    font-weight: bold;
-    display: inline;
+div.noteWrapper{
+    display: grid;
 }
 
-div.draggableNote button {
-    width: 20%;
-    height: 100%;
-    display: inline;
-    border: none;
-    background-color: #e9b657;
+div.draggableNote div#noteTopSpace {
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 220px;
+    height: 30px;
+    cursor: grab;
+}
+
+div.draggableNote div#noteButton {
+    grid-column: 2/2;
+    grid-row: 1;
+    width: 30px;
+    background-color: #dfb74a;
+    text-align: center;
     font-weight: bold;
+    color: #ad8f3a;
+    cursor: pointer;
+}
+
+div.draggableNote div#NoteWrittingSpace {
+    height: 100%;
 }
