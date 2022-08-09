@@ -4,9 +4,9 @@ A notes website 📋
 ## Checklist
 - [x] NavBar
 - [x] Footer
-- [ ] Add Note Button
+- [x] Add Note Button
 - [ ] Cache notes  
-- [ ] Moveable Notes
+- [x] Moveable Notes
 - [ ] Custom notes
 - [ ] Sync notes
 
