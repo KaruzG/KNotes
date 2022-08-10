@@ -1,4 +1,5 @@
 const notes = document.querySelectorAll(".draggableNote");
+const allElements = document.querySelectorAll("*");
 
 notes.forEach(note => {
     const drag = (e) => {
@@ -8,10 +9,17 @@ notes.forEach(note => {
     }
     
     note.addEventListener("mousedown", () => {
+        allElements.forEach(element => {
+            element.style.userSelect = "none";
+        });
         window.addEventListener("mousemove" , drag);
+
     });
     
     window.addEventListener("mouseup", () => {
+        allElements.forEach(element => {
+            element.style.userSelect = "text";
+        });
         window.removeEventListener("mousemove" , drag);
     }); 
 });

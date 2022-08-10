@@ -43,6 +43,24 @@ div.draggableNote {
     transform: translate(-50%, -10%);
 }
 
+div.draggableNote textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color:#FCD462;
+    outline: none;
+    resize: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#dfb74a;
+}
+
 div.noteWrapper{
     display: grid;
 }
@@ -53,19 +71,22 @@ div.draggableNote div#noteTopSpace {
     width: 220px;
     height: 30px;
     cursor: grab;
+    border-top: 1px solid #FCD462; /*  <--------  No idea why on the button there is an extra pixel, this is a junk fix to that */
 }
 
 div.draggableNote button#noteButton {
     grid-column: 2/2;
     grid-row: 1;
     width: 30px;
-    background-color: #dfb74a;
+    background-color: #FCD462;
     text-align: center;
     font-weight: bold;
     color: #ad8f3a;
     cursor: pointer;
     border: none;
+    
 }
+
 
 div.draggableNote div#NoteWrittingSpace {
     height: 100%;
