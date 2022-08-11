@@ -65,7 +65,7 @@ div.noteWrapper{
     display: grid;
 }
 
-div.draggableNote div#noteTopSpace {
+div.draggableNote div.noteTopSpace {
     grid-column: 1/2;
     grid-row: 1;
     width: 220px;
@@ -88,6 +88,6 @@ div.draggableNote button#noteButton {
 }
 
 
-div.draggableNote div#NoteWrittingSpace {
+div.draggableNote div.noteWrittingSpace {
     height: 100%;
 }
