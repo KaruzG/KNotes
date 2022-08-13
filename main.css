@@ -74,7 +74,7 @@ div.draggableNote div.noteTopSpace {
     border-top: 1px solid #FCD462; /*  <--------  No idea why on the button there is an extra pixel, this is a junk fix to that */
 }
 
-div.draggableNote button#noteButton {
+div.draggableNote button.noteButton {
     grid-column: 2/2;
     grid-row: 1;
     width: 30px;
@@ -90,4 +90,24 @@ div.draggableNote button#noteButton {
 
 div.draggableNote div.noteWrittingSpace {
     height: 100%;
+}
+
+ul.dropdown-menu-note {
+    background-color: #0000008b;
+    padding: 10px;
+    border: 2px solid #dfb74a43;
+}
+
+ul.dropdown-menu-note li {
+    padding: 5px;
+    margin: 2px;
+}
+
+ul.dropdown-menu-note li:hover {
+    background-color: rgba(255, 255, 255, 0.096);
+}
+
+ul.dropdown-menu-note li a {
+    color: white;
+    text-decoration: none;
 }
