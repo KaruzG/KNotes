@@ -87,14 +87,14 @@ div.draggableNote button.noteButton {
     
 }
 
-
 div.draggableNote div.noteWrittingSpace {
     height: 100%;
 }
 
 ul.dropdown-menu-note {
-    background-color: #0000008b;
+    background-color: #000000dd;
     padding: 10px;
+    border-radius: 0;
     border: 2px solid #dfb74a43;
 }
 
@@ -110,4 +110,5 @@ ul.dropdown-menu-note li:hover {
 ul.dropdown-menu-note li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
