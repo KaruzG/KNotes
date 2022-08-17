@@ -112,3 +112,15 @@ ul.dropdown-menu-note li a {
     text-decoration: none;
     font-weight: bold;
 }
+
+div.colorPickerMenu {
+    background-color: #262626;
+    max-width: 200px;
+    height: 50px;
+}
+
+button#color1 {
+    min-width: 10px;
+    min-height: 5px;
+    background-color: #dfb74a;
+}
