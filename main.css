@@ -4,6 +4,7 @@
     #FCD462
 */
 
+/* ADD NOTE BUTTON */
 button#addNoteButton {
     background-color: #FCD462;
     margin: 50px;
@@ -25,6 +26,8 @@ i#addNote:hover {
     cursor: pointer;
 }
 
+
+/* -----------------NOTES-------------------- */
 div.draggableNote {
     background-color: #FCD462;
     min-width: 250px;
@@ -34,15 +37,27 @@ div.draggableNote {
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
     border-bottom: 5px solid #dfb74a;
-}
-
-div.draggableNote {
     position: absolute;
     top: 10%;
     left: 25%;
     transform: translate(-50%, -10%);
 }
 
+div.noteWrapper{
+    display: grid;
+}
+
+/* notes top space */
+div.draggableNote div.noteTopSpace {
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 220px;
+    height: 30px;
+    cursor: grab;
+    border-top: 1px solid #FCD462; /*  <--------  No idea why on the button there is an extra pixel, this is a junk fix to that */
+}
+
+/* notes writtable space */
 div.draggableNote textarea {
     border: none;
     width: 100%;
@@ -52,6 +67,11 @@ div.draggableNote textarea {
     resize: none;
 }
 
+div.draggableNote div.noteWrittingSpace {
+    height: 100%;
+}
+
+/* note scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -59,19 +79,6 @@ div.draggableNote textarea {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color:#dfb74a;
-}
-
-div.noteWrapper{
-    display: grid;
-}
-
-div.draggableNote div.noteTopSpace {
-    grid-column: 1/2;
-    grid-row: 1;
-    width: 220px;
-    height: 30px;
-    cursor: grab;
-    border-top: 1px solid #FCD462; /*  <--------  No idea why on the button there is an extra pixel, this is a junk fix to that */
 }
 
 div.draggableNote button.noteButton {
@@ -85,10 +92,6 @@ div.draggableNote button.noteButton {
     cursor: pointer;
     border: none;
     
-}
-
-div.draggableNote div.noteWrittingSpace {
-    height: 100%;
 }
 
 ul.dropdown-menu-note {
@@ -113,6 +116,10 @@ ul.dropdown-menu-note li a {
     font-weight: bold;
 }
 
+
+
+
+/* COLOR PICKER MENU */
 div.colorPickerMenu {
     background-color: #262626;
     max-width: 200px;
