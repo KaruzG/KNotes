@@ -117,17 +117,42 @@ ul.dropdown-menu-note li a {
 }
 
 
-
-
 /* COLOR PICKER MENU */
 div.colorPickerMenu {
     background-color: #262626;
-    max-width: 200px;
+    width: 150px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
 }
+
+div.col {
+    height: 30px;
+    width: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px;
+
+}
+
 /* colors */
+button.color {
+    min-width: 30px;
+    min-height: 30px;
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
 button#color1 {
-    min-width: 10px;
-    min-height: 5px;
     background-color: #dfb74a;
+}
+
+button#color2 {
+    background-color: #b15895;
+}
+
+button#color3 {
+    background-color: #4b9946;
 }
