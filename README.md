@@ -9,6 +9,7 @@ A notes website 📋
 - [x] Moveable Notes
 - [ ] Custom notes
 - [ ] Sync notes
+- [ ] Change Color of Notes
 
 ## Built With
 · HTML
