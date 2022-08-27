@@ -1,0 +1,4 @@
+console.log("✅ addNoteButton.js loaded")
+var main = document.getElementById("notesSpace");
+
+main.insertAdjacentHTML('beforeend', '<div class="draggableNote" id="note2" style="z-index: 1;"> <!-- SECOND NOTE --><div class="noteWrapper"><div id="note1TopSpace" class="noteTopSpace"></div><button class="noteButton" data-bs-toggle="dropdown">≡</button><ul class="dropdown-menu dropdown-menu-note"><li><a href="#" class="dropwdown-item">Cambiar color</a></li><li><a href="#" onclick="removeNote(1)" class="dropwdown-item">Eliminar nota</a></li></ul></div><div class="noteWrittingSpace"><textarea name="" id="" cols="30" rows="10"></textarea></div></div>');

@@ -54,43 +54,19 @@
 
 
     <!-- NOTES --------------------------------- -->
-    <div class="draggableNote" id="note1" style="z-index: 1;"> <!-- FIRST NOTE -->
-        <div class="noteWrapper">
-            <div id="note1TopSpace" class="noteTopSpace"></div>
-            <button class="noteButton" data-bs-toggle="dropdown">≡</button>
-            <ul class="dropdown-menu dropdown-menu-note">
-                <li><a href="#" class="dropwdown-item">Cambiar color</a></li>
-                <li><a href="#" onclick="removeNote(1)" class="dropwdown-item">Eliminar nota</a></li>
-            </ul>
-         </div>
-         <div class="noteWrittingSpace"><textarea name="" id="" cols="30" rows="10"></textarea></div>
-    </div>
-
-    <div class="draggableNote" id="note2" style="z-index: 2;"> <!-- SECOND NOTE -->
-        <div class="noteWrapper">
-            <div id="note2TopSpace" class="noteTopSpace"></div>
-            <button class="noteButton" data-bs-toggle="dropdown">≡</button>
-            <ul class="dropdown-menu dropdown-menu-note">
-                <li><a href="#" class="dropwdown-item">Cambiar color</a></li>
-                <li><a href="#" onclick="removeNote(2)" class="dropwdown-item">Eliminar nota</a></li>
-            </ul>
-         </div>
-         <div class="noteWrittingSpace"><textarea name="" id="" cols="30" rows="10"></textarea></div>
-    </div>
-
-    <div class="draggableNote" id="note3" style="z-index: 3;"> <!-- THIRD NOTE -->
-        <div class="noteWrapper">
-            <div id="note3TopSpace" class="noteTopSpace"></div>
-            <button class="noteButton" data-bs-toggle="dropdown">≡</button>
-            <ul class="dropdown-menu dropdown-menu-note">
-                <li><a href="#" class="dropwdown-item">Cambiar color</a></li>
-                <li><a href="#" onclick="removeNote(3)" class="dropwdown-item">Eliminar nota</a></li>
-            </ul>
-         </div>
-         <div class="noteWrittingSpace"><textarea name="" id="" cols="30" rows="10"></textarea></div>
-    </div>
-
-
+    <div id="notesSpace">
+        <div class="draggableNote" id="note1" style="z-index: 1;"> <!-- FIRST NOTE -->
+            <div class="noteWrapper">
+                <div id="note1TopSpace" class="noteTopSpace"></div>
+                <button class="noteButton" data-bs-toggle="dropdown">≡</button>
+                <ul class="dropdown-menu dropdown-menu-note">
+                    <li><a href="#" class="dropwdown-item">Cambiar color</a></li>
+                    <li><a href="#" onclick="removeNote(1)" class="dropwdown-item">Eliminar nota</a></li>
+                </ul>
+             </div>
+             <div class="noteWrittingSpace"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+        </div>
+    
 
     <!-- PICK COLOR MENU ---------------------  --> 
     <div class="container colorPickerMenu">
@@ -111,7 +87,7 @@
 
     <!-- ADD NOTE BUTTON ---------------------  -->
     <div class="fixed-bottom" onclick="addNote()">
-        <i id="addNote" class="fa-solid fa-circle-plus fa-5x float-end"></i>
+        <i id="addNote" onclick="" class="fa-solid fa-circle-plus fa-5x float-end"></i>
     </div>
 
     
