@@ -1,8 +1,9 @@
+console.log("✅ draggable.js loaded");
 var draggableElements = document.getElementsByClassName("draggableNote");
 var notes = document.querySelectorAll(".draggableNote");
 var lastSelectedNote = null;
 
-console.log(draggableElements.length)
+console.log(draggableElements.length + " notes to drag.");
 
 for(var i = 0; i < draggableElements.length; i++){
     dragElement(draggableElements[i]);
@@ -26,7 +27,7 @@ function dragElement(elmnt) {
             console.log("⚠️   " + elmnt.id + " selected!");            // 
             if(lastSelectedNote != null) {                             //       DEBUG THINGS
                 console.log(lastSelectedNote.id + " ES LA DE ANTES");  //
-            }
+            };
 
             notes.forEach(function(note){   // -1 to every note but cant go below 0
                 if (note.style.zIndex != 0) {
